@@ -1,0 +1,13 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+
+# Local Python environments
+.venv/
+venv/
+
+# Packaged add-on archives
+*.ankiaddon

@@ -1,1 +1,1 @@
-"""Python feature modules for Cassidy Editor."""
+"""Python feature modules for Cassidy SWE Editor."""

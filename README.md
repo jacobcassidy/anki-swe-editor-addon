@@ -1,4 +1,4 @@
-# Cassidy Editor
+# Cassidy SWE Editor
 
 Personal Anki editor add-on. Restart Anki after installation or configuration changes.
 
@@ -15,18 +15,7 @@ Personal Anki editor add-on. Restart Anki after installation or configuration ch
 - `__init__.py`: Anki hooks, toolbar button, configuration, and script loading.
 
 The default shortcut is Ctrl+Shift+C (Command+Shift+C on macOS through Anki).
-Configuration is available through Tools → Add-ons → Cassidy Editor → Config.
-The files run inside one private JavaScript scope, without the Wrapper meta-addon.
-
-## Migration
-
-Wrapper meta-addon (396502676) was disabled because its only configured button
-was the inline-code action now provided here. Its files remain intact.
-Original custom JavaScript, commands, and metadata are preserved in
-`user_files/migration_backup/` for rollback. Do not enable both add-ons together:
-they would register duplicate shortcuts and clipboard handlers.
-
-To roll back, disable Cassidy Editor and re-enable Wrapper, then restart Anki.
+Configuration is available through Tools → Add-ons → Cassidy SWE Editor → Config.
 
 ## Validation and limits
 
@@ -69,7 +58,7 @@ internal Anki pastes are skipped. The same MIME hook also covers external HTML
 drops. Other clipboard formats are copied unchanged; the system clipboard and
 existing notes are not rewritten. Anki may further sanitize the pasted HTML.
 
-Validation: `python3 -m unittest discover -s cassidy_editor/tests` from the
+Validation: `python3 -m unittest discover -s cassidy_swe_editor/tests` from the
 add-ons directory, plus Python syntax checks. Verified normal Craft Command+C
 and Anki Command+V in the running editor, including the resulting HTML source.
 Anki's insertion can still adjust wrapping. For newly inserted lists with an

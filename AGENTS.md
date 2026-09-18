@@ -1,4 +1,4 @@
-# Cassidy Editor: instructions for coding agents
+# Cassidy SWE Editor: instructions for coding agents
 
 These instructions apply to this directory and all of its subdirectories.
 

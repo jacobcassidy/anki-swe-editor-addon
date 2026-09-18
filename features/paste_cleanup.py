@@ -90,7 +90,7 @@ def clean_paste_mime(mime, editor_web_view, internal, extended, drop_event):
 
     if internal or not extended or not mime.hasHtml() or not settings()["paste_cleanup"]:
         return mime
-    editor_web_view.eval("window.cassidyEditor?.beginPasteLayout();")
+    editor_web_view.eval("window.cassidySWEEditor?.beginPasteLayout();")
     original = mime.html()
     cleaned = clean_paste_html(original)
     if cleaned == original:
@@ -103,4 +103,4 @@ def clean_paste_mime(mime, editor_web_view, internal, extended, drop_event):
 
 
 def finish_paste_layout(editor, html, internal, extended):
-    editor.web.eval("window.cassidyEditor?.finishPasteLayout();")
+    editor.web.eval("window.cassidySWEEditor?.finishPasteLayout();")

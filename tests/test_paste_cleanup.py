@@ -1,4 +1,4 @@
-"""Run with python3 -m unittest discover -s cassidy_editor/tests."""
+"""Run with python3 -m unittest discover -s cassidy_swe_editor/tests."""
 import importlib.util
 from pathlib import Path
 import unittest

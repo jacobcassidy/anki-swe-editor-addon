@@ -33,7 +33,7 @@ def feature_script():
     # One shared private scope lets feature files cooperate without replacing
     # Anki's or another add-on's functions. Each editor webview gets its own copy.
     script = (
-        "(() => { if (window.cassidyEditor) return;\n"
+        "(() => { if (window.cassidySWEEditor) return;\n"
         f"const settings = {config};\n{source}\n"
         "})();"
     )
@@ -52,14 +52,14 @@ def load_features(editor):
 def toggle_inline_code(editor):
     # Initialize and invoke in the same evaluation. Do not silently swallow a
     # missing API when an editor webview was rebuilt or skipped body injection.
-    editor.web.eval(feature_script() + "\nwindow.cassidyEditor.toggleInlineCode();")
+    editor.web.eval(feature_script() + "\nwindow.cassidySWEEditor.toggleInlineCode();")
 
 
 def add_button(buttons, editor):
     shortcut = settings()["inline_code_shortcut"]
     buttons.append(editor.addButton(
         icon=str(ROOT / "icons" / "inline-code.svg"),
-        cmd="cassidy_inline_code",
+        cmd="cassidy_swe_editor_inline_code",
         func=toggle_inline_code,
         tip=f"Inline Code ({shortcut_label(shortcut)})",
         keys=shortcut,
