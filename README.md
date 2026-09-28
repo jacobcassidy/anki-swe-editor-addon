@@ -1,6 +1,6 @@
-# Cassidy SWE Editor
+# Anki SWE Editor Addon
 
-Personal Anki editor add-on. Restart Anki after installation or configuration changes.
+Anki editor add-on for software engineering cards. Restart Anki after installation or configuration changes.
 
 ## Features
 
