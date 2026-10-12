@@ -1,8 +1,7 @@
 # Anki SWE Editor Addon
 
-> !NOTE
->
-> The features from this add-on have been merged into the [anki-global-kit-addon](https://github.com/jacobcassidy/anki-global-kit-addon) and this repo is now archive.
+> [!NOTE]
+> The features from this add-on have been merged into the [anki-global-kit-addon](https://github.com/jacobcassidy/anki-global-kit-addon) and this repo is now archived.
 
 Anki editor add-on for software engineering cards. Restart Anki after installation or configuration changes.
 
