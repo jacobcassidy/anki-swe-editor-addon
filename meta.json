@@ -1,5 +1,5 @@
 {
   "name": "Cassidy SWE Editor Addon",
-  "disabled": false,
+  "disabled": true,
   "update_enabled": false
 }
